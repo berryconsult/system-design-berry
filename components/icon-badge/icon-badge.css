@@ -1,0 +1,12 @@
+/* Berry Design System · icon-badge
+   Gerado a partir de berry-design-system.html. Não editar à mão; alterar o token/fonte. */
+
+/* ===================== ÍCONES (badges oficiais) ===================== */
+.icon-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--sp-4)}
+.icon-cell{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.ico-badge{position:relative;width:100%;aspect-ratio:1;border-radius:15px;background:radial-gradient(80% 80% at 50% 47%,#141516,#0A0A0A);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.ico-badge::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:2px;background:linear-gradient(#393A3B,#101112);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.ico-badge::after{content:"";position:absolute;left:9%;right:9%;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);pointer-events:none}
+.ico-badge svg{width:62%;height:62%;display:block;filter:drop-shadow(0 2px 1.5px rgba(0,0,0,.55))}
+.ico-badge svg path{fill:none;stroke:url(#ico-grad);stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+.icon-cell span{font-size:var(--fs-xs);color:var(--txt-2)}

@@ -1,0 +1,6 @@
+/* Berry Design System · tag
+   Gerado a partir de berry-design-system.html. Não editar à mão; alterar o token/fonte. */
+
+.tag{display:inline-flex;background:rgba(71,201,126,.14);color:var(--verde);border:1px solid rgba(71,201,126,.35);border-radius:var(--r-sm);padding:5px 12px;font-size:var(--fs-xs);font-weight:600;transition:all var(--duration-normal) var(--easing-smooth)}
+.tag:hover{transform:scale(1.05)}
+.tag.b{background:rgba(13,48,164,.18);color:var(--cinza-claro);border-color:rgba(13,48,164,.5)}

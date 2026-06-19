@@ -1,0 +1,8 @@
+/* Berry Design System · list
+   Gerado a partir de berry-design-system.html. Não editar à mão; alterar o token/fonte. */
+
+.blist,.arrlist{list-style:none;display:flex;flex-direction:column;gap:var(--sp-3)}
+.blist li{display:flex;gap:12px;align-items:flex-start;color:var(--txt-2);font-size:var(--fs-base)}
+.blist .dot{width:9px;height:9px;border-radius:var(--r-pill);background:var(--accent-text);margin-top:7px;flex-shrink:0}
+.arrlist li{display:flex;gap:12px;color:var(--txt-2);font-size:var(--fs-base)}
+.arrlist .arr{color:var(--accent-text);font-weight:700}

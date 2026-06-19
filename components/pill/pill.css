@@ -1,0 +1,5 @@
+/* Berry Design System · pill
+   Gerado a partir de berry-design-system.html. Não editar à mão; alterar o token/fonte. */
+
+.pillrow{display:flex;flex-wrap:wrap;gap:var(--sp-3)}
+.pill{background:var(--surface-3);border:1px solid var(--border);border-radius:var(--r-pill);padding:8px 18px;font-size:var(--fs-sm);font-weight:500}

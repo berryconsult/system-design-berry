@@ -1,0 +1,7 @@
+/* Berry Design System · divider
+   Gerado a partir de berry-design-system.html. Não editar à mão; alterar o token/fonte. */
+
+.divider-accent{display:flex;align-items:center;gap:var(--sp-4);width:100%;transition:all var(--duration-normal) var(--easing-smooth)}
+.divider-accent .line{flex:1;height:1px;background:var(--border)}
+.divider-accent .vbar{width:4px;height:28px;background:var(--azul);border-radius:var(--r-pill);transition:height var(--duration-normal) var(--easing-smooth)}
+.divider-accent:hover .vbar{height:36px}

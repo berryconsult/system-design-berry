@@ -1,0 +1,12 @@
+/* Berry Design System · theme-toggle
+   Gerado a partir de berry-design-system.html. Não editar à mão; alterar o token/fonte. */
+
+/* ===================== ALTERNADOR DE TEMA ===================== */
+.theme-toggle{position:fixed;top:18px;right:20px;z-index:50;display:inline-flex;align-items:center;gap:8px;background:var(--surface-2);border:1px solid var(--border);color:var(--txt);border-radius:var(--r-pill);padding:8px 14px;font-family:var(--font-body);font-size:var(--fs-xs);font-weight:600;cursor:pointer;backdrop-filter:blur(8px);transition:all var(--duration-normal) var(--easing-smooth)}
+.theme-toggle:hover{border-color:var(--border-strong);background:var(--surface-3)}
+.theme-toggle svg{width:16px;height:16px;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.theme-toggle .lbl::after{content:"Escuro"}
+.theme-toggle .ic-sun{display:none}
+html.light .theme-toggle .ic-moon{display:none}
+html.light .theme-toggle .ic-sun{display:block}
+html.light .theme-toggle .lbl::after{content:"Claro"}

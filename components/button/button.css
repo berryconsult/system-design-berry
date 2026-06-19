@@ -1,0 +1,11 @@
+/* Berry Design System · button
+   Gerado a partir de berry-design-system.html. Não editar à mão; alterar o token/fonte. */
+
+.btn{font-family:var(--font-display);font-weight:500;font-size:var(--fs-sm);border:none;border-radius:var(--r-sm);padding:13px 26px;cursor:pointer;transition:all var(--duration-normal) var(--easing-smooth);display:inline-flex;align-items:center;gap:8px}
+.btn:hover{opacity:.88;transform:translateY(-1px)}
+.btn:active{transform:translateY(1px);box-shadow:inset 0 2px 8px rgba(0,0,0,.2)}
+.btn:disabled{opacity:.5;cursor:not-allowed;color:var(--cinza-400)}
+.btn-primary{background:var(--azul);color:var(--cinza-claro)}
+.btn-green{background:var(--verde);color:var(--preto)}
+.btn-ghost{background:transparent;color:var(--txt);border:1px solid var(--border-strong)}
+.btn-ghost:hover{border-color:var(--accent-text);color:var(--accent-text);opacity:1}

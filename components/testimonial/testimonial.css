@@ -1,0 +1,10 @@
+/* Berry Design System · testimonial
+   Gerado a partir de berry-design-system.html. Não editar à mão; alterar o token/fonte. */
+
+.testi{background:var(--cinza-claro);border-radius:var(--r-lg);padding:var(--sp-6);max-width:360px}
+.testi .top{display:flex;align-items:center;gap:10px;margin-bottom:var(--sp-3)}
+.testi .av{width:36px;height:36px;border-radius:var(--r-pill);background:var(--cinza);color:var(--cinza-claro);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:var(--fs-sm);font-family:var(--font-display)}
+.testi .who .nm{color:var(--preto);font-size:var(--fs-sm);font-weight:500}
+.testi .who .st{color:var(--cinza);font-size:11px;letter-spacing:1px}
+.testi h5{font-family:var(--font-display);color:var(--preto);font-size:var(--fs-base);font-weight:600;margin-bottom:6px}
+.testi p{color:var(--cinza);font-size:var(--fs-sm)}

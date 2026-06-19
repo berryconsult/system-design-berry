@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Berry · input</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<link rel="stylesheet" href="../../styles/reset.css">
+<link rel="stylesheet" href="../../styles/base.css">
+<link rel="stylesheet" href="input.css">
+<style>body{padding:48px;min-height:100vh}.preview-light{display:inline-block;background:var(--cinza-claro);padding:28px;border-radius:16px}code{font-family:var(--font-mono);color:var(--accent-text)}</style>
+</head>
+<body>
+<div style="display:flex;flex-direction:column;gap:24px;max-width:420px">
+  <div><label for="nome">Nome</label><input id="nome" type="text" placeholder="Seu nome completo" style="width:100%"></div>
+  <div><label for="email">E-mail</label><input id="email" type="email" placeholder="voce@empresa.com.br" style="width:100%"></div>
+  <div><label for="erro">Campo com erro</label><input id="erro" class="error" type="text" value="valor inválido" style="width:100%"></div>
+  <div><label for="off">Desabilitado</label><input id="off" type="text" placeholder="Indisponível" disabled style="width:100%"></div>
+</div>
+</body>
+</html>

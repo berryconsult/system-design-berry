@@ -1,0 +1,35 @@
+/* Berry Design System · Layout e chrome da página de documentação
+   Gerado a partir de berry-design-system.html. Não editar à mão; alterar o token/fonte. */
+
+/* ===================== LAYOUT ===================== */
+.shell{display:flex;min-height:100vh}
+.sidenav{width:248px;flex-shrink:0;position:sticky;top:0;height:100vh;border-right:1px solid var(--border);padding:var(--sp-8) var(--sp-6);display:flex;flex-direction:column;gap:var(--sp-2);overflow-y:auto;background:var(--surface-1)}
+.sidenav .brandrow{display:flex;align-items:center;gap:10px;margin-bottom:var(--sp-8)}
+.sidenav .brandrow span{font-family:var(--font-display);font-weight:600;font-size:20px;letter-spacing:-.01em}
+.sidenav a{font-size:var(--fs-sm);color:var(--txt-2);padding:8px 12px;border-radius:var(--r-sm);display:flex;gap:10px;align-items:center;transition:background .15s,color .15s}
+.sidenav a:hover{background:var(--surface-2);color:var(--txt)}
+.sidenav a .num{font-family:var(--font-mono);font-size:11px;color:var(--accent-text);width:20px}
+.sidenav .navlabel{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-2);margin:var(--sp-6) 12px var(--sp-2)}
+.main{flex:1;min-width:0}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 var(--sp-8)}
+/* ===================== HERO ===================== */
+.hero{padding:var(--sp-24) 0 var(--sp-16);border-bottom:1px solid var(--border)}
+.hero-inner{position:relative}
+.hero .eyebrow{color:var(--accent-text);text-transform:uppercase;letter-spacing:.14em;font-size:var(--fs-xs);font-weight:600;margin-bottom:var(--sp-6);font-family:var(--font-body)}
+.hero h1{font-size:var(--fs-display-xl);font-weight:600;letter-spacing:-.02em;line-height:1.02}
+.hero h1 .ghost{color:var(--txt-2);display:block}
+.hero p{max-width:580px;color:var(--txt-2);font-size:var(--fs-lg);margin-top:var(--sp-6);position:relative}
+.hero p::before{content:"";position:absolute;left:-28px;top:6px;width:4px;height:calc(100% - 12px);background:var(--azul);border-radius:var(--r-pill)}
+.hero .meta{display:flex;gap:var(--sp-8);margin-top:var(--sp-12);flex-wrap:wrap}
+.hero .meta div{font-size:var(--fs-sm);color:var(--txt-2)}
+.hero .meta strong{display:block;color:var(--txt);font-size:var(--fs-base);font-weight:500;margin-bottom:2px;font-family:var(--font-display)}
+/* ===================== SEÇÕES ===================== */
+section{padding:var(--sp-16) 0;border-bottom:1px solid var(--border)}
+.sec-head{margin-bottom:var(--sp-12)}
+.sec-head .kicker{font-family:var(--font-mono);font-size:var(--fs-xs);color:var(--azul-text);letter-spacing:.1em;margin-bottom:var(--sp-3)}
+.sec-head h2{font-size:var(--fs-h1);font-weight:600;letter-spacing:-.01em;color:var(--txt-2)}
+.sec-head h2 .em{color:var(--txt)}
+.sec-head p{color:var(--txt-2);max-width:660px;margin-top:var(--sp-3);font-size:var(--fs-base)}
+.sub{font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.1em;color:var(--txt-2);font-weight:600;margin:var(--sp-8) 0 var(--sp-4);font-family:var(--font-body)}
+.note{color:var(--txt-2);font-size:var(--fs-sm);margin-top:var(--sp-6)}
+.note code{font-family:var(--font-mono);color:var(--accent-text)}

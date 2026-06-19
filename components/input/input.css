@@ -1,0 +1,11 @@
+/* Berry Design System · input
+   Gerado a partir de berry-design-system.html. Não editar à mão; alterar o token/fonte. */
+
+/* ===================== INPUTS (novo) ===================== */
+input[type="text"],input[type="email"],input[type="password"],input[type="number"],input[type="search"],textarea,select{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--r-md);padding:var(--sp-4) var(--sp-6);color:var(--txt);font-family:var(--font-body);font-size:var(--fs-base);transition:border-color var(--duration-normal) var(--easing-smooth),box-shadow var(--duration-normal) var(--easing-smooth),background var(--duration-normal) var(--easing-smooth)}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--azul);background:var(--surface-1);box-shadow:0 0 0 3px rgba(13,48,164,.1)}
+input::placeholder{color:var(--cinza-400)}
+input:disabled{background:var(--surface-1);color:var(--cinza-400);cursor:not-allowed}
+label{font-weight:600;font-size:var(--fs-sm);color:var(--txt);display:block;margin-bottom:var(--sp-2)}
+input.error{border-color:#DC2626}
+input.error:focus{box-shadow:0 0 0 3px rgba(220,38,38,.1)}

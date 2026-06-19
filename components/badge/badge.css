@@ -1,0 +1,5 @@
+/* Berry Design System · badge
+   Gerado a partir de berry-design-system.html. Não editar à mão; alterar o token/fonte. */
+
+.badge{background:transparent;border:1px solid var(--cinza);border-radius:var(--r-md);padding:12px 18px;color:var(--preto);font-size:var(--fs-sm);font-weight:600;display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);transition:all var(--duration-normal) var(--easing-smooth)}
+.badge:hover{background:var(--cinza-claro);color:var(--preto)}
