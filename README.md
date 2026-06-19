@@ -2,16 +2,16 @@
 
 Sistema de design oficial da **Berry Consultoria**: o sistema visual e verbal derivado do manual de identidade e dos arquivos oficiais da marca.
 
-O repositório tem duas faces que servem a propósitos distintos:
+O repositório se organiza em duas camadas que trabalham juntas:
 
-- **`index.html`** é o showcase compilado e autocontido. Abre direto no navegador, sem build, e renderiza o sistema inteiro com modo escuro e claro.
+- **`index.html`** é o showcase. Abre direto no navegador, sem build, e renderiza o sistema inteiro com modo escuro e claro. Ele agora consome os arquivos modulares (`tokens/`, `styles/`, `components/`) via `<link>`, então não há CSS duplicado: o que se vê no showcase é exatamente o código-fonte das pastas.
 - **As pastas** (`tokens/`, `foundations/`, `components/`, `assets/`) são a fonte modular e documentada, organizada no padrão de mercado: uma camada de tokens como fonte única de verdade, fundamentos documentados, um componente por pasta e os vetores oficiais como arquivos.
 
 ## Estrutura
 
 ```
 system-design-berry/
-├── index.html                  # showcase compilado (kitchen-sink), modo escuro/claro
+├── index.html                  # showcase; consome tokens/ styles/ components/ via <link>
 ├── tokens/                     # fonte única de verdade
 │   ├── tokens.json             # formato W3C Design Tokens (DTCG)
 │   ├── tokens.css              # espelho em CSS custom properties + tema claro
@@ -59,7 +59,7 @@ Cada pasta traz o CSS do componente, um preview que abre sozinho no navegador e 
 - **Tokens primeiro.** Nenhum componente usa valor cru de cor, medida ou tempo. Tudo referencia `var(--token)`. Para mudar a marca, muda-se o token.
 - **Paleta fechada.** Cinco cores de marca (preto, cinza, cinza claro, azul, verde). As únicas exceções são os sinais funcionais de sistema (alerta e erro), restritos a feedback de interface.
 - **Fidelidade de vetor.** Logos e ícones foram extraídos dos arquivos oficiais sem regenerar caminho.
-- **Compilado x fonte.** O `index.html` é o pacote renderizado; as pastas são o código-fonte modular. Ao alterar um componente, ajuste o CSS da pasta e reflita no showcase.
+- **Fonte única.** O `index.html` carrega o CSS direto das pastas modulares. Para alterar um componente, edita-se o CSS da pasta e o showcase reflete na hora, sem duplicação a manter em sincronia.
 
 ## Origem
 
